@@ -1,0 +1,110 @@
+</style>
+
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-12" id="section-flex-img" style="background-image:url('{{ section.settings.bg-image }}');"></div>
+        <div class="col-lg-6 col-md-6 col-12">
+            <h1 class="mobile-app-flexible__title">{{ section.settings.heading1 }}</h1>
+            <p class="mobile-app-flexible__subtext">{{ section.settings.richtext1 }}</p>
+            <br>
+            <a class="mobile-app-section__button" href="{{ section.settings.link1 }}">
+                {{- section.settings.link1text -}}
+            </a>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+  {
+      "name": "mobile-flexible",
+      "tag": "section",
+      "settings": [
+          {
+              "type": "text",
+              "id": "heading1",
+              "label": "Heading 1",
+              "default": "Designed for one handed use"
+          }, 
+          {
+            "type": "image_picker",
+            "id": "bg-image",
+            "label": "Image",
+            "info": "1500 x 1500px .jpg recommended"
+          },
+          {
+              "type": "richtext",
+              "id": "richtext1",
+              "label": "Richtext 1",
+              "default": "<p>The Vibes Only app's custom controller lets you adjust the intensity (0-100%), pick patterns, toggle stealth mode, and control dual motors vibrators independently.</p>"
+          },
+          {
+              "type": "url",
+              "id": "link1",
+              "label": "Link 1"
+          },
+          {
+              "type": "text",
+              "id": "link1text",
+              "label": "Link 1 text",
+              "default": "TRY IT OUT"
+          }
+      ],
+      "presets": [
+          {
+              "name": "mobile-flexible"
+          }
+      ]
+  }
+  {% endschema %}
+
+{% stylesheet %}
+  .mobile-app-flexible__subtext{
+    color: #403131;
+    font-family: Helvetica Neue;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  #section-flex-img{
+    background-image:url("{{ settings.image.src | image_url: 'master' }}");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height:375px;
+    background-position: 50% 30%;
+    background-size: 953px;
+  }
+  
+  .flexible_image{
+    width:200%!important;
+    object-fit: fill;
+  }
+  .container{
+    margin-bottom:30px;
+  }
+  .mobile-app-flexible__title{
+    margin-top:30px;
+    color: #403131;
+    font-family: Operetta 12;
+    font-size: 3.5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .mobile-app-section__button{
+    margin-top:30px;
+    margin-bottom:30px;
+    padding:13px;
+    font-size: 13px;
+    color: #403131;
+    font-weight:400;
+    font-family: Helvetica Neue;
+    border-radius: 12px;
+    border: 1px solid rgba(191, 85, 105, 0.30);
+    background: linear-gradient(90deg, rgba(229, 102, 126, 0.60) -42.84%, rgba(248, 228, 230, 0.60) 114.03%);
+  }
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

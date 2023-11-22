@@ -1,0 +1,42 @@
+{
+    "type": "footer",
+    "name": "Footer group",
+    "sections": {
+        "footer": {
+            "type": "footer",
+            "blocks": {
+                "links": {
+                    "type": "links",
+                    "settings": {
+                        "menu": "footer",
+                        "show_menu_title": false
+                    }
+                },
+                "newsletter": {
+                    "type": "newsletter",
+                    "settings": {
+                        "image_width": 150,
+                        "heading_size": "h5",
+                        "title": "Straight to your box",
+                        "content": "<p>Provide your email  to be able to receive updates and exclusive new in your inbox<\/p>"
+                    }
+                }
+            },
+            "block_order": [
+                "links",
+                "newsletter"
+            ],
+            "settings": {
+                "show_social_media": true,
+                "show_payment_icons": true,
+                "show_country_selector": true,
+                "show_country_flag": true,
+                "show_country_name": true,
+                "show_locale_selector": true
+            }
+        }
+    },
+    "order": [
+        "footer"
+    ]
+}
