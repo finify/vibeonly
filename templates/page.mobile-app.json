@@ -87,41 +87,11 @@
         "mobile-section3": {
             "type": "mobile-section-flexible",
             "settings": {}
-        },
-        "mobile-section4": {
-            "type": "mobile-section4",
-            "settings": {}
-        },
-        "mobile-section5": {
-            "type": "mobile-section-flexible",
-            "settings": {}
-        },
-        "mobile-section6": {
-            "type": "mobile-section-flexible",
-            "settings": {}
-        },
-        "mobile-section7": {
-            "type": "mobile-section7",
-            "settings": {}
-        },
-        "mobile-section8": {
-            "type": "mobile-section-flexible",
-            "settings": {}
-        },
-        "mobile-section9": {
-            "type": "mobile-section9",
-            "settings": {}
         }
     },
     "order": [
         "mobile-section1",
         "mobile-section2",
-        "mobile-section3",
-        "mobile-section4",
-        "mobile-section5",
-        "mobile-section6",
-        "mobile-section7",
-        "mobile-section8",
-        "mobile-section9"
+        "mobile-section3"
     ]
 }
