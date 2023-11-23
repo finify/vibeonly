@@ -1,15 +1,15 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-6 col-md-6 col-12">
+        <div class="col-lg-6 col-md-6 col-12 text-content">
             <h1 class="mobile-app-flexible__title">{{ section.settings.heading1 }}</h1>
             <p class="mobile-app-flexible__subtext">{{ section.settings.richtext1 }}</p>
-            <br>
+        
             <a class="mobile-app-section__button" href="{{ section.settings.link1 }}">
                 {{- section.settings.link1text -}}
             </a>
         </div>
-        <div class="col-lg-6 col-md-6 col-12 section-flex-img-right">
+        <div class="col-lg-6 col-md-6 col-12 section-flex-img-right mobile-app-section__media">
           {%- if section.settings.image != blank -%}
             {{-
               section.settings.image
@@ -68,11 +68,13 @@
   {% endschema %}
 
 {% stylesheet %}
-.section-flex-img-right{
-  height:300px;
-}
-.section-flex-img-right img{
-  width:80%;
+
+.text-content{
+  display:flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
 }
   .mobile-app-flexible__subtext{
     color: #403131;
@@ -100,11 +102,10 @@
     line-height: normal;
   }
   .mobile-app-section__button{
-    margin-top:30px;
-    margin-bottom:30px;
     padding:13px;
     font-size: 13px;
     color: #403131;
+    width: fit-content;
     font-weight:400;
     font-family: Helvetica Neue;
     border-radius: 12px;
