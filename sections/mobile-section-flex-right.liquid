@@ -1,6 +1,6 @@
 <style>
 .section-flex-img{
-    background-image:url("{{ section.settings.bg_image | image_url }}");
+    background-image:url("{{ section.settings.bg_image_right | image_url }}");
     background-repeat: no-repeat;
     background-size: cover; 
     height:375px;
@@ -36,7 +36,7 @@
           }, 
           {
             "type": "image_picker",
-            "id": "bg_image",
+            "id": "bg_image_right",
             "label": "Image",
             "info": "1500 x 1500px .jpg recommended"
           },
