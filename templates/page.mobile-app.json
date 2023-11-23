@@ -6,12 +6,14 @@
         "79074da1-b6be-45be-98bd-930e39142e2b": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/google-play.webp",
             "link": "https:\/\/play.google.com\/store\/apps\/details?id=com.vibesonly.app&hl=en&gl=US"
           }
         },
         "44663fc0-90fd-4f2e-98dc-3e65e3fa5498": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/app-store.webp",
             "link": "https:\/\/play.google.com\/store\/apps\/details?id=com.vibesonly.app&hl=en&gl=US"
           }
         }
@@ -22,6 +24,7 @@
       ],
       "settings": {
         "full_width": false,
+        "image": "shopify:\/\/shop_images\/mobile-1.webp",
         "title": "Vibrators...",
         "subtitle": "but make it a connected experience."
       }
