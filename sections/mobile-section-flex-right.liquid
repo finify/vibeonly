@@ -1,13 +1,4 @@
-<style>
-.section-flex-img-right{
-    background-image:url("{{ section.settings.bg_image_right | image_url }}");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    height:375px;
-    background-position: 50% 30%;
-    background-size: 953px;
-  }
-</style>
+
 <div class="container">
     <div class="row">
         <div class="col-lg-6 col-md-6 col-12">
@@ -18,7 +9,17 @@
                 {{- section.settings.link1text -}}
             </a>
         </div>
-        <div class="col-lg-6 col-md-6 col-12 section-flex-img-right"></div>
+        <div class="col-lg-6 col-md-6 col-12 section-flex-img-right">
+          {%- if section.settings.image != blank -%}
+            {{-
+              section.settings.image
+              | image_url: width: 2024
+              | image_tag: loading: 'lazy', widths: '300,400,500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600'
+            -}}
+          {%- else -%}
+            {{- 'image' | placeholder_svg_tag: 'aspect-short placeholder' -}}
+          {%- endif -%}
+        </div>
     </div>
 </div>
 
@@ -33,10 +34,10 @@
               "id": "heading1",
               "label": "Heading 1",
               "default": "Designed for one handed use"
-          }, 
+          },
           {
             "type": "image_picker",
-            "id": "bg_image_right",
+            "id": "image",
             "label": "Image",
             "info": "1500 x 1500px .jpg recommended"
           },
