@@ -1,6 +1,17 @@
 
 <div class="container" style="max-width:max-content!important">
     <div class="row">
+        <div class="col-lg-6 col-md-6 col-12 section-flex-img-right mobile-app-section__media">
+          {%- if section.settings.image_left != blank -%}
+            {{-
+              section.settings.image_left
+              | image_url: width: 2024
+              | image_tag: loading: 'lazy', widths: '300,400,500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600'
+            -}}
+          {%- else -%}
+            {{- 'image' | placeholder_svg_tag: 'aspect-short placeholder' -}}
+          {%- endif -%}
+        </div>
         <div class="col-lg-6 col-md-6 col-12 text-content">
             <h1 class="mobile-app-flexible__title">{{ section.settings.heading1 }}</h1>
             <p class="mobile-app-flexible__subtext">{{ section.settings.richtext1 }}</p>
@@ -9,24 +20,13 @@
                 {{- section.settings.link1text -}}
             </a>
         </div>
-        <div class="col-lg-6 col-md-6 col-12 section-flex-img-right mobile-app-section__media">
-          {%- if section.settings.image != blank -%}
-            {{-
-              section.settings.image
-              | image_url: width: 2024
-              | image_tag: loading: 'lazy', widths: '300,400,500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600'
-            -}}
-          {%- else -%}
-            {{- 'image' | placeholder_svg_tag: 'aspect-short placeholder' -}}
-          {%- endif -%}
-        </div>
     </div>
 </div>
 
 
 {% schema %}
   {
-      "name": "mobile-flexible-right",
+      "name": "mobile-flexible-left",
       "tag": "section",
       "settings": [
           {
@@ -37,7 +37,7 @@
           },
           {
             "type": "image_picker",
-            "id": "image",
+            "id": "image_left",
             "label": "Image",
             "info": "1500 x 1500px .jpg recommended"
           },
@@ -61,7 +61,7 @@
       ],
       "presets": [
           {
-              "name": "mobile-flexible-right"
+              "name": "mobile-flexible-left"
           }
       ]
   }
