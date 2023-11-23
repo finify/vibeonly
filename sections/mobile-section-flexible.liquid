@@ -1,5 +1,12 @@
 </style>
-
+.section-flex-img{
+    background-image:url("{{ section.settings.bg_image | image_url }}");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height:375px;
+    background-position: 50% 30%;
+    background-size: 953px;
+  }
 </style>
 <div class="container">
     <div class="row">
@@ -67,14 +74,7 @@
     font-style: normal;
     font-weight: 300;
   }
-  .section-flex-img{
-    background-image:url("{{ section.settings.bg_image | image_url }}");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    height:375px;
-    background-position: 50% 30%;
-    background-size: 953px;
-  }
+  
   
   .flexible_image{
     width:200%!important;
