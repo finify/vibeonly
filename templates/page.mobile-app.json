@@ -98,6 +98,7 @@
       "type": "mobile-section-flex-right",
       "settings": {
         "heading1": "Designed for one handed use",
+        "bg_image_right": "shopify:\/\/shop_images\/infoimage.png",
         "richtext1": "<p>The Vibes Only app's custom controller lets you adjust the intensity (0-100%), pick patterns, toggle stealth mode, and control dual motors vibrators independently.<\/p>",
         "link1": "",
         "link1text": "TRY IT OUT"
