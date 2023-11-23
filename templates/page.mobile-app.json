@@ -84,6 +84,16 @@
         "title": "Discover limitless pleasure: The exclusive vibrator that syncs with erotic audio."
       }
     },
+    "dc060611-ea9c-4e8c-bf95-8da13a93848b": {
+      "type": "mobile-section-flex-left",
+      "settings": {
+        "heading1": "Designed for one handed use",
+        "image_left": "shopify:\/\/shop_images\/firstmobileleft.png",
+        "richtext1": "<p>The Vibes Only app's custom controller lets you adjust the intensity (0-100%), pick patterns, toggle stealth mode, and control dual motors vibrators independently.<\/p>",
+        "link1": "",
+        "link1text": "TRY IT OUT"
+      }
+    },
     "mobile-section3": {
       "type": "mobile-section-flexible",
       "settings": {
@@ -108,6 +118,7 @@
   "order": [
     "mobile-section1",
     "mobile-section2",
+    "dc060611-ea9c-4e8c-bf95-8da13a93848b",
     "mobile-section3",
     "00904299-6365-4f45-8cee-f5e3a8409bc9"
   ]
