@@ -3,6 +3,93 @@
   CSS
   ------------------------------------------------------------------------------------------------------------------------
 {%- endcomment -%}
+<style>
+    .mobile-slide-title{
+        color:black;
+        text-align: center;
+            font-family: Helvetica Neue;
+            font-size:5vw;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+    }
+    .mobile-app-slide__richtext{
+        color: #403131;
+        font-family: Helvetica Neue;
+        font-size:20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    .mobile-app-slide-card-itle{
+        color: #BF5569;
+        font-family: Helvetica Neue;
+        font-size:60px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .mobile-app-flexible__title1{
+        color: #403131;
+        font-family: Helvetica Neue;
+        font-size:3vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    @media only screen and (max-width: 600px) {
+        .card-body{
+        min-height: 100px!important;
+        min-width: 90%!important;
+        padding:10px;
+        }
+        .mobile-app-slide-card-itle{
+            font-size:40px;
+        }
+        .mobile-app-slide__richtext{
+        font-size: 20px;
+        }
+        .mobile-app-slide-subtext{
+            font-size:15px;
+        }
+    }
+
+    .mobile-app-slide-subtext{
+        color: #403131;
+        font-family: Helvetica Neue;
+        font-size:30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .card-body{
+        min-height: 300px;
+        min-width: 700px;
+        margin-right: 20px;
+        border-radius: 15px;
+        border: 1px solid rgba(191, 85, 105, 0.30);
+        background: linear-gradient(180deg, #F2C2C7 0%, rgba(249, 232, 234, 0.15) 100%), #FDF3F3;
+        box-shadow: 0px 20px 32px 0px rgba(191, 85, 105, 0.12);
+        padding:8px;
+    }
+
+    .text-content{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: center;
+    }
+    .mobile-slide{
+        width: 100%;
+        height: fit-content;
+        overflow: hidden;
+        overflow: scroll;
+    }
+    .mobile-slide::-webkit-scrollbar {
+    display: none;
+    }
+</style>
 <div class="mobile-slide-section">
     <h2 class="mobile-slide-title">{{ section.settings.title }}</h2>
     <div class="container-fluid py-2 mobile-slide">
@@ -13,15 +100,13 @@
                         <div class="container" style="max-width:max-content!important">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-12 text-content">
-                                    <h1 class="mobile-app-flexible__title">{{ block.settings.slideheadtext }}</h1>
-                                    <h4 class="mobile-app-flexible__title1">
+                                    <h1 class="mobile-app-slide-card-itle">{{ block.settings.slideheadtext }}</h1>
                                         {%- if block.settings.slidesubtext != blank -%}
-                                            <h4 class="mobile-app-flexible__title1"> {{ block.settings.slidesubtext }} </h4>
+                                            <h4 class="mobile-app-slide-subtext"> {{ block.settings.slidesubtext }} </h4>
                                         {%- else -%}
                                             
                                         {%- endif -%}
-                                    <p class="mobile-app-flexible__subtext">{{ block.settings.sliderichtext }}</p>
-                                
+                                        <h4 class="mobile-app-slide__richtext">{{ block.settings.sliderichtext }}</h4>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-12 section-flex-img-right mobile-app-section__media">
                                     {%- if block.settings.slideimage != blank -%}
@@ -105,64 +190,7 @@
 {% endschema %}
 
 {% stylesheet %}
-        .mobile-app-flexible__title{
-            color: #BF5569;
-            font-family: Helvetica Neue;
-            font-size:6vw;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-        }
-        .mobile-app-flexible__title1{
-            color: #403131;
-            font-family: Helvetica Neue;
-            font-size:3vw;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-        }
-        .text-content p{
-            color: #403131;
-            font-family: Helvetica Neue;
-            font-size:2vw;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
-        }
-        @media only screen and (max-width: 600px) {
-            .card-body{
-            min-height: 100px!important;
-            min-width: 90%!important;
-            padding:10px;
-            }
-        }
-        .card-body{
-            min-height: 300px;
-            min-width: 700px;
-            margin-right: 20px;
-            border-radius: 15px;
-            border: 1px solid rgba(191, 85, 105, 0.30);
-            background: linear-gradient(180deg, #F2C2C7 0%, rgba(249, 232, 234, 0.15) 100%), #FDF3F3;
-            box-shadow: 0px 20px 32px 0px rgba(191, 85, 105, 0.12);
-            padding:8px;
-        }
-
-        .text-content{
-        display:flex;
-        flex-direction:column;
-        flex-wrap: wrap;
-            align-content: space-around;
-            justify-content: center;
-        }
-        .mobile-slide{
-            width: 100%;
-            height: fit-content;
-            overflow: hidden;
-            overflow: scroll;
-        }
-        .mobile-slide::-webkit-scrollbar {
-        display: none;
-        }
+        
 {% endstylesheet %}
 
 {% javascript %}
