@@ -3,7 +3,103 @@
   CSS
   ------------------------------------------------------------------------------------------------------------------------
 {%- endcomment -%}
+<style>
+    .mobile-tab-wrapper {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding-left: 0px;
+        }
 
+        .mobile-tab-item.active {
+            border-radius: 110px;
+            border: 1px solid #403131;
+            background: #F9E8EA!important;
+            padding: 5px 10px 5px 10px;
+            align-items: center;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color:black!important;
+            font-size: 2.5vw;
+        }
+
+        .mobile-tab-item {
+            padding: 5px 10px 5px 10px;
+            align-items: center;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color:black!important;
+            font-size: 2.5vw;
+        }
+
+        .mobile-tab-item:hover {
+            cursor: pointer;
+            border-radius: 110px;
+            border: 1px solid #403131;
+            background: #F9E8EA;
+        }
+
+        .mobile-tab-item img {
+            width: 15px;
+        }
+
+        .container {
+            background-color: aliceblue;
+            margin-bottom: 100px;
+        }
+
+        .section-flex-img {
+            background-image: url("controller.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 375px;
+            background-position: 80% 100%;
+            background-size: 353px;
+        }
+
+        .mobile-app-flexible__title {
+            margin-top: 30px;
+            color: #403131;
+            font-family: Operetta 12;
+            font-size: 1.8em;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .mobile-tab-image.active {
+            display: block;
+        }
+
+        .mobile-tab-image {
+            display: none;
+        }
+        .nav{
+            width: 45%;
+        }
+        @media only screen and (max-width: 600px) {
+            .nav{
+            flex-direction: row!important;
+            width:100%;
+            }
+            .mobile-tab{
+            width: 100%!important;
+            margin: auto;
+            }
+        }
+        .nav-link{
+            text-align: left;
+        }
+        .mobile-tab{
+            width: 80%;
+            margin: auto;
+        }
+</style>
 <div class="mobile-tab">
         <h2>{{ section.settings.title }}</h2>
         <div class="container">
@@ -102,101 +198,7 @@
 {% endschema %}
 
 {% stylesheet %}
-    .mobile-tab-wrapper {
-            list-style-type: none;
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            padding-left: 0px;
-        }
-
-        .mobile-tab-item.active {
-            border-radius: 110px;
-            border: 1px solid #403131;
-            background: #F9E8EA!important;
-            padding: 5px 10px 5px 10px;
-            align-items: center;
-            width: fit-content;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            color:black!important;
-            font-size: 2.5vw;
-        }
-
-        .mobile-tab-item {
-            padding: 5px 10px 5px 10px;
-            align-items: center;
-            width: fit-content;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            color:black!important;
-            font-size: 2.5vw;
-        }
-
-        .mobile-tab-item:hover {
-            cursor: pointer;
-            border-radius: 110px;
-            border: 1px solid #403131;
-            background: #F9E8EA;
-        }
-
-        .mobile-tab-item img {
-            width: 15px;
-        }
-
-        .container {
-            background-color: aliceblue;
-            margin-bottom: 100px;
-        }
-
-        .section-flex-img {
-            background-image: url("controller.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 375px;
-            background-position: 80% 100%;
-            background-size: 353px;
-        }
-
-        .mobile-app-flexible__title {
-            margin-top: 30px;
-            color: #403131;
-            font-family: Operetta 12;
-            font-size: 1.8em;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-        }
-
-        .mobile-tab-image.active {
-            display: block;
-        }
-
-        .mobile-tab-image {
-            display: none;
-        }
-        .nav{
-            width: 45%;
-        }
-        @media only screen and (max-width: 600px) {
-            .nav{
-            flex-direction: row!important;
-            width:100%;
-            }
-            .mobile-tab{
-            width: 100%!important;
-            margin: auto;
-            }
-        }
-        .nav-link{
-            text-align: left;
-        }
-        .mobile-tab{
-            width: 80%;
-            margin: auto;
-        }
+    
 {% endstylesheet %}
 
 {% javascript %}
