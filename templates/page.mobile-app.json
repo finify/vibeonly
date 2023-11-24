@@ -94,14 +94,23 @@
         "link1text": "TRY IT OUT"
       }
     },
-    "mobile-section3": {
-      "type": "mobile-section-flexible",
+    "0a023bbd-a3e0-46ca-9fe3-941a93e245ce": {
+      "type": "mobile-section-tab",
+      "blocks": {
+        "template--16968722809069__0a023bbd-a3e0-46ca-9fe3-941a93e245ce-image-1": {
+          "type": "image",
+          "settings": {
+            "tabimage": "shopify:\/\/shop_images\/customcontroller.png",
+            "tabicon": "shopify:\/\/shop_images\/Group.png",
+            "icontext": "Custom controller"
+          }
+        }
+      },
+      "block_order": [
+        "template--16968722809069__0a023bbd-a3e0-46ca-9fe3-941a93e245ce-image-1"
+      ],
       "settings": {
-        "heading1": "Designed for one handed use",
-        "bg_image": "shopify:\/\/shop_images\/sectionimage.png",
-        "richtext1": "<p>The Vibes Only app's custom controller lets you adjust the intensity (0-100%), pick patterns, toggle stealth mode, and control dual motors vibrators independently.<\/p>",
-        "link1": "",
-        "link1text": "TRY IT OUT"
+        "title": "Heading"
       }
     },
     "00904299-6365-4f45-8cee-f5e3a8409bc9": {
@@ -119,7 +128,7 @@
     "mobile-section1",
     "mobile-section2",
     "dc060611-ea9c-4e8c-bf95-8da13a93848b",
-    "mobile-section3",
+    "0a023bbd-a3e0-46ca-9fe3-941a93e245ce",
     "00904299-6365-4f45-8cee-f5e3a8409bc9"
   ]
 }
