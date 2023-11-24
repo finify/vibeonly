@@ -120,12 +120,21 @@
             "tabicon": "shopify:\/\/shop_images\/automatic.png",
             "icontext": "Automatic mode"
           }
+        },
+        "30907cfb-8df0-4070-b9b1-8b3b37215e02": {
+          "type": "image",
+          "settings": {
+            "tabimage": "shopify:\/\/shop_images\/eroticaudio.png",
+            "tabicon": "shopify:\/\/shop_images\/erotic.png",
+            "icontext": "Erotic audio experiences"
+          }
         }
       },
       "block_order": [
         "template--16968722809069__0a023bbd-a3e0-46ca-9fe3-941a93e245ce-image-1",
         "efa73c0c-f6e1-472c-b5e8-8c2571b1a60e",
-        "f396b7f9-4323-42de-a8d3-82762d8416ec"
+        "f396b7f9-4323-42de-a8d3-82762d8416ec",
+        "30907cfb-8df0-4070-b9b1-8b3b37215e02"
       ],
       "settings": {
         "title": "Explore the Vibes Only"
