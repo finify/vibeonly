@@ -196,6 +196,26 @@
         "link1text": "TRY IT OUT"
       }
     },
+    "9d30a0f3-780e-4007-a363-0a4f455cbdb1": {
+      "type": "mobile-section-slide",
+      "blocks": {
+        "template--16968722809069__9d30a0f3-780e-4007-a363-0a4f455cbdb1-image-1": {
+          "type": "image",
+          "settings": {
+            "slideimage": "shopify:\/\/shop_images\/step1.png",
+            "slideheadtext": "Step 01",
+            "slidesubtext": "Sub",
+            "sliderichtext": "<p>The Vibes Only app's custom controller lets you adjust the intensity (0-100%), pick patterns, toggle stealth mode, and control dual motors vibrators independently.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16968722809069__9d30a0f3-780e-4007-a363-0a4f455cbdb1-image-1"
+      ],
+      "settings": {
+        "title": "Long Distance Partner"
+      }
+    },
     "85a7b7a6-6a93-432d-a5b4-5692d3fb164c": {
       "type": "mobile-section-flex-left",
       "settings": {
@@ -224,6 +244,7 @@
     "0a023bbd-a3e0-46ca-9fe3-941a93e245ce",
     "e507c9af-064a-4b35-b51b-bb8939a4655d",
     "00904299-6365-4f45-8cee-f5e3a8409bc9",
+    "9d30a0f3-780e-4007-a363-0a4f455cbdb1",
     "85a7b7a6-6a93-432d-a5b4-5692d3fb164c",
     "8bb0de90-fa5b-4551-a387-abf6b8eda3aa"
   ]
