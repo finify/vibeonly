@@ -142,7 +142,15 @@
           "settings": {
             "tabimage": "shopify:\/\/shop_images\/videoinformation.png",
             "tabicon": "shopify:\/\/shop_images\/video.png",
-            "icontext": "icontext"
+            "icontext": "Informative videos"
+          }
+        },
+        "15031b13-655a-4d20-96de-b842d348c641": {
+          "type": "image",
+          "settings": {
+            "tabimage": "shopify:\/\/shop_images\/longdistance.png",
+            "tabicon": "shopify:\/\/shop_images\/long.png",
+            "icontext": "Long Distance Lover"
           }
         }
       },
@@ -152,7 +160,8 @@
         "f396b7f9-4323-42de-a8d3-82762d8416ec",
         "30907cfb-8df0-4070-b9b1-8b3b37215e02",
         "20fd525b-ce4c-47ee-bfa7-7f1bfba00f15",
-        "73dfb5f0-de2a-4f8f-be97-2e4689b53a3b"
+        "73dfb5f0-de2a-4f8f-be97-2e4689b53a3b",
+        "15031b13-655a-4d20-96de-b842d348c641"
       ],
       "settings": {
         "title": "Explore the Vibes Only"
