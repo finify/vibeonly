@@ -135,6 +135,14 @@
         </div>
     </div>
 
+    <script>
+        $(document).ready(function(){
+            // $("#v-pills-custom-tab").addClass("active");
+            $('.nav-link').first().addClass('active');
+            $('.tab-pane').first().addClass('active');
+        });
+    </script>
+
 {% schema %}
 {
   "name": "Mobile tab",
@@ -192,9 +200,5 @@
 {% endstylesheet %}
 
 {% javascript %}
- $(document).ready(function(){
-    // $("#v-pills-custom-tab").addClass("active");
-    $('.nav-link').first().addClass('active');
-    $('.tab-pane').first().addClass('active');
-});
+ 
 {% endjavascript %}
