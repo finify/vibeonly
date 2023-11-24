@@ -1,0 +1,203 @@
+{%- comment -%}
+  ------------------------------------------------------------------------------------------------------------------------
+  CSS
+  ------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<div class="mobile-tab">
+        <h2>{{ section.settings.title }}</h2>
+        <div class="container">
+            <div class="d-flex align-items-start row">
+                <div class="nav flex-column nav-pills me-3 col-lg-6 col-md-6 col-12" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    {% if section.blocks %}
+                        {%- for block in section.blocks -%}
+
+                            <button class="nav-link active mobile-tab-item" id="{{ block.id }}-tab" data-bs-toggle="pill"
+                        data-bs-target="#{{ block.id }}" type="button" role="tab" aria-controls="{{ block.id }}"
+                        aria-selected="true">
+                        {%- if block.settings.tabicon != blank -%}
+                            {{-
+                            block.settings.tabicon
+                            | image_url: width: 15
+                            | image_tag: loading: 'lazy', widths: '15'
+                            -}}
+                        {%- else -%}
+                            {{- 'image' | placeholder_svg_tag: 'aspect-short placeholder' -}}
+                        {%- endif -%}
+                        <span>{{ block.settings.icontext }}</span></button>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                <div class="tab-content col-lg-6 col-md-6 col-12" id="v-pills-tabContent">
+                    {% if section.blocks %}
+                        {%- for block in section.blocks -%}
+                            <div class="tab-pane fade show active" id="{{ block.id }}" role="tabpanel" aria-labelledby="{{ block.id }}-tab">
+                                {%- if block.settings.tabimage != blank -%}
+                                    {{-
+                                    block.settings.tabimage
+                                    | image_url: width: 2024
+                                    | image_tag: loading: 'lazy', widths: '300,400,500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600'
+                                    -}}
+                                {%- else -%}
+                                    {{- 'image' | placeholder_svg_tag: 'aspect-short placeholder' -}}
+                                {%- endif -%}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% schema %}
+{
+  "name": "Mobile tab",
+  "class": "mobile-tab",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Link",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "tabimage",
+          "label": "tabImage",
+          "info": "1500 x 1500px .jpg recommended"
+        },
+        {
+          "type": "image_picker",
+          "id": "tabicon",
+          "label": "iconImage",
+          "info": "a 1 x 1 ratio image is recommended"
+        },
+        {
+        "type": "text",
+        "id": "icontext",
+        "label": "icontext",
+        "default": "icontext"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Mobile tab",
+      "blocks": [
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+    .mobile-tab-wrapper {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding-left: 0px;
+        }
+
+        .mobile-tab-item.active {
+            border-radius: 110px;
+            border: 1px solid #403131;
+            background: #F9E8EA!important;
+            padding: 5px 10px 5px 10px;
+            align-items: center;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color:black!important;
+            font-size: 2.5vw;
+        }
+
+        .mobile-tab-item {
+            padding: 5px 10px 5px 10px;
+            align-items: center;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color:black!important;
+            font-size: 2.5vw;
+        }
+
+        .mobile-tab-item:hover {
+            cursor: pointer;
+            border-radius: 110px;
+            border: 1px solid #403131;
+            background: #F9E8EA;
+        }
+
+        .mobile-tab-item img {
+            width: 15px;
+        }
+
+        .container {
+            background-color: aliceblue;
+            margin-bottom: 100px;
+        }
+
+        .section-flex-img {
+            background-image: url("controller.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 375px;
+            background-position: 80% 100%;
+            background-size: 353px;
+        }
+
+        .mobile-app-flexible__title {
+            margin-top: 30px;
+            color: #403131;
+            font-family: Operetta 12;
+            font-size: 1.8em;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .mobile-tab-image.active {
+            display: block;
+        }
+
+        .mobile-tab-image {
+            display: none;
+        }
+        .nav{
+            width: 45%;
+        }
+        @media only screen and (max-width: 600px) {
+            .nav{
+            flex-direction: row!important;
+            width:100%;
+            }
+            .mobile-tab{
+            width: 100%!important;
+            margin: auto;
+            }
+        }
+        .nav-link{
+            text-align: left;
+        }
+        .mobile-tab{
+            width: 80%;
+            margin: auto;
+        }
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
