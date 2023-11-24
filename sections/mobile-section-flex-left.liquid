@@ -1,32 +1,35 @@
-
-<div class="container">
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-12 section-flex-img-right mobile-app-section__media">
-          {%- if section.settings.image_left != blank -%}
-            {{-
-              section.settings.image_left
-              | image_url: width: 2024
-              | image_tag: loading: 'lazy', widths: '300,400,500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600'
-            -}}
-          {%- else -%}
-            {{- 'image' | placeholder_svg_tag: 'aspect-short placeholder' -}}
-          {%- endif -%}
-        </div>
-        <div class="col-lg-6 col-md-6 col-12 text-content">
-            <h1 class="mobile-app-flex-left__title">{{ section.settings.heading1 }}</h1>
-            <h2 class="mobile-app-flexible__subtext">{{ section.settings.richtext1 }}</h2>
-        
-            <a class="mobile-app-section__button" href="{{ section.settings.link1 }}">
-                {{- section.settings.link1text -}}
-            </a>
+<div class="mobile-flex-left">
+    <div class="section   section-blends section-full">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12 section-flex-img-right">
+            {%- if section.settings.image_left != blank -%}
+                {{-
+                section.settings.image_left
+                | image_url: width: 2024
+                | image_tag: loading: 'lazy', widths: '300,400,500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600'
+                -}}
+            {%- else -%}
+                {{- 'image' | placeholder_svg_tag: 'aspect-short placeholder' -}}
+            {%- endif -%}
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 text-content">
+                <h1 class="mobile-app-flex-left__title">{{ section.settings.heading1 }}</h1>
+                <h2 class="mobile-app-flexible__subtext">{{ section.settings.richtext1 }}</h2>
+            
+                <a class="mobile-app-section__button" href="{{ section.settings.link1 }}">
+                    {{- section.settings.link1text -}}
+                </a>
+            </div>
         </div>
     </div>
 </div>
 
 
+
 {% schema %}
   {
       "name": "mobile-flexible-left",
+      "class":"mobile-flex-left",
       "tag": "section",
       "settings": [
           {
@@ -69,7 +72,7 @@
 
 {% stylesheet %}
 .section-flex-img-right img{
-  width: 70%!important;
+  width: 100%!important;
 }
 .text-content{
   display:flex;
@@ -93,12 +96,13 @@
   }
   .container{
     margin-bottom:30px;
+    margin-left: 0px!important;
   }
   .mobile-app-flex-left__title{
     margin-top:30px;
     color: #403131;
     font-family: Operetta 12;
-    font-size:3.5vw;
+    font-size:70px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -114,6 +118,12 @@
     border-radius: 12px;
     border: 1px solid rgba(191, 85, 105, 0.30);
     background: linear-gradient(90deg, rgba(229, 102, 126, 0.60) -42.84%, rgba(248, 228, 230, 0.60) 114.03%);
+  }
+
+  @media only screen and (max-width: 600px) {
+    .mobile-app-flex-left__title{
+    font-size:30px;
+    }
   }
 {% endstylesheet %}
 
