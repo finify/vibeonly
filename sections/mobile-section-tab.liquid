@@ -110,8 +110,8 @@
                     {% if section.blocks %}
                         {%- for block in section.blocks -%}
 
-                            <button class="nav-link mobile-tab-item" id="{{ block.id }}-tab" data-bs-toggle="pill"
-                        data-bs-target="#{{ block.id }}" type="button" role="tab" aria-controls="{{ block.id }}"
+                            <button class="nav-link mobile-tab-item" id="a{{ block.id }}-tab" data-bs-toggle="pill"
+                        data-bs-target="#a{{ block.id }}" type="button" role="tab" aria-controls="a{{ block.id }}"
                         aria-selected="true">
                         {%- if block.settings.tabicon != blank -%}
                             {{-
@@ -129,7 +129,7 @@
                 <div class="tab-content col-lg-6 col-md-6 col-12" id="v-pills-tabContent">
                     {% if section.blocks %}
                         {%- for block in section.blocks -%}
-                            <div class="tab-pane fade show" id="{{ block.id }}" role="tabpanel" aria-labelledby="{{ block.id }}-tab">
+                            <div class="tab-pane fade show" id="a{{ block.id }}" role="tabpanel" aria-labelledby="a{{ block.id }}-tab">
                                 {%- if block.settings.tabimage != blank -%}
                                     {{-
                                     block.settings.tabimage
