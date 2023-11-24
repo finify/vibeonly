@@ -176,6 +176,16 @@
         "title": "Explore the Vibes Only"
       }
     },
+    "e507c9af-064a-4b35-b51b-bb8939a4655d": {
+      "type": "mobile-section-flex-left",
+      "settings": {
+        "heading1": "Erotic audio",
+        "image_left": "shopify:\/\/shop_images\/eroticaudio_533c2c39-b0de-4d58-b91b-1eb70c1cb836.png",
+        "richtext1": "<p>Take your pleasure to the next level with a library of erotic audio experiences. With new stories released weekly and sexy voices of all genders (speaking directly to you), subscribing to the VO app unlocks a world in which you’re the main character of your wilde?st fantasies. Opt for an all-encompassing experience: Listen, read in tandem, and turn on automatic mode, which syncs your vibrator with the story. As the action gets hotter, your vibrator will follow along, so you can lay back and let our sultry narratives guide your pleasure effortlessly. <\/p>",
+        "link1": "",
+        "link1text": "TRY IT OUT"
+      }
+    },
     "00904299-6365-4f45-8cee-f5e3a8409bc9": {
       "type": "mobile-section-flex-right",
       "settings": {
@@ -192,6 +202,7 @@
     "mobile-section2",
     "dc060611-ea9c-4e8c-bf95-8da13a93848b",
     "0a023bbd-a3e0-46ca-9fe3-941a93e245ce",
+    "e507c9af-064a-4b35-b51b-bb8939a4655d",
     "00904299-6365-4f45-8cee-f5e3a8409bc9"
   ]
 }
