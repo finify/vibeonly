@@ -152,6 +152,14 @@
             "tabicon": "shopify:\/\/shop_images\/long.png",
             "icontext": "Long Distance Lover"
           }
+        },
+        "90a76d68-f6d3-45fb-bca0-af59f68db89c": {
+          "type": "image",
+          "settings": {
+            "tabimage": "shopify:\/\/shop_images\/lyricsimage.png",
+            "tabicon": "shopify:\/\/shop_images\/lyrics.png",
+            "icontext": "Lyrics"
+          }
         }
       },
       "block_order": [
@@ -161,7 +169,8 @@
         "30907cfb-8df0-4070-b9b1-8b3b37215e02",
         "20fd525b-ce4c-47ee-bfa7-7f1bfba00f15",
         "73dfb5f0-de2a-4f8f-be97-2e4689b53a3b",
-        "15031b13-655a-4d20-96de-b842d348c641"
+        "15031b13-655a-4d20-96de-b842d348c641",
+        "90a76d68-f6d3-45fb-bca0-af59f68db89c"
       ],
       "settings": {
         "title": "Explore the Vibes Only"
