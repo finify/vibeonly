@@ -195,6 +195,26 @@
         "link1": "",
         "link1text": "TRY IT OUT"
       }
+    },
+    "85a7b7a6-6a93-432d-a5b4-5692d3fb164c": {
+      "type": "mobile-section-flex-left",
+      "settings": {
+        "heading1": "Lyrics",
+        "image_left": "shopify:\/\/shop_images\/image_104.png",
+        "richtext1": "<p>Swipe up to engage and read along with the story, with or without sound. Our lyric feature lets you navigate to any section, ensuring your vibrator stays in sync when in automatic mode too.<\/p>",
+        "link1": "",
+        "link1text": "TRY IT OUT"
+      }
+    },
+    "8bb0de90-fa5b-4551-a387-abf6b8eda3aa": {
+      "type": "mobile-section-flex-right",
+      "settings": {
+        "heading1": "Battery estimator",
+        "image": "shopify:\/\/shop_images\/image_104.png",
+        "richtext1": "<p>You can check the battery life of your Vibes Only vibrator within the app. Once your vibrator is connected via Bluetooth, you will see the battery life on the battery icon.<\/p>",
+        "link1": "",
+        "link1text": "TRY IT OUT"
+      }
     }
   },
   "order": [
@@ -203,6 +223,8 @@
     "dc060611-ea9c-4e8c-bf95-8da13a93848b",
     "0a023bbd-a3e0-46ca-9fe3-941a93e245ce",
     "e507c9af-064a-4b35-b51b-bb8939a4655d",
-    "00904299-6365-4f45-8cee-f5e3a8409bc9"
+    "00904299-6365-4f45-8cee-f5e3a8409bc9",
+    "85a7b7a6-6a93-432d-a5b4-5692d3fb164c",
+    "8bb0de90-fa5b-4551-a387-abf6b8eda3aa"
   ]
 }
