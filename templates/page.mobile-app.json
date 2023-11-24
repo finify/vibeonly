@@ -207,10 +207,40 @@
             "slidesubtext": "Sub",
             "sliderichtext": "<p>The Vibes Only app's custom controller lets you adjust the intensity (0-100%), pick patterns, toggle stealth mode, and control dual motors vibrators independently.<\/p>"
           }
+        },
+        "5d817a8e-0af0-4790-b7f4-6776749b8701": {
+          "type": "image",
+          "settings": {
+            "slideimage": "shopify:\/\/shop_images\/step1.png",
+            "slideheadtext": "Step 02",
+            "slidesubtext": "Sub",
+            "sliderichtext": "<p>The Vibes Only app's custom controller lets you adjust the intensity (0-100%), pick patterns, toggle stealth mode, and control dual motors vibrators independently.<\/p>"
+          }
+        },
+        "e1fda536-9bcb-46ae-8053-2371057d3796": {
+          "type": "image",
+          "settings": {
+            "slideimage": "shopify:\/\/shop_images\/step1.png",
+            "slideheadtext": "Step 03",
+            "slidesubtext": "Sub",
+            "sliderichtext": "<p>The Vibes Only app's custom controller lets you adjust the intensity (0-100%), pick patterns, toggle stealth mode, and control dual motors vibrators independently.<\/p>"
+          }
+        },
+        "83e00934-32cd-4914-aff8-5674bcbe401f": {
+          "type": "image",
+          "settings": {
+            "slideimage": "shopify:\/\/shop_images\/step1.png",
+            "slideheadtext": "Step 04",
+            "slidesubtext": "Sub",
+            "sliderichtext": "<p>The Vibes Only app's custom controller lets you adjust the intensity (0-100%), pick patterns, toggle stealth mode, and control dual motors vibrators independently.<\/p>"
+          }
         }
       },
       "block_order": [
-        "template--16968722809069__9d30a0f3-780e-4007-a363-0a4f455cbdb1-image-1"
+        "template--16968722809069__9d30a0f3-780e-4007-a363-0a4f455cbdb1-image-1",
+        "5d817a8e-0af0-4790-b7f4-6776749b8701",
+        "e1fda536-9bcb-46ae-8053-2371057d3796",
+        "83e00934-32cd-4914-aff8-5674bcbe401f"
       ],
       "settings": {
         "title": "Long Distance Partner"
