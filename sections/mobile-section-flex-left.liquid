@@ -1,7 +1,7 @@
 <div class="mobile-flex-left">
     <div class="section   section-blends section-full">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-12 section-flex-img-right">
+            <div class="col-lg-5 col-md-5 col-12 section-flex-img-right">
             {%- if section.settings.image_left != blank -%}
                 {{-
                 section.settings.image_left
@@ -12,7 +12,7 @@
                 {{- 'image' | placeholder_svg_tag: 'aspect-short placeholder' -}}
             {%- endif -%}
             </div>
-            <div class="col-lg-6 col-md-6 col-12 text-content">
+            <div class="col-lg-7 col-md-7 col-12 text-content">
                 <h1 class="mobile-app-flex-left__title">{{ section.settings.heading1 }}</h1>
                 <h2 class="mobile-app-flexible__subtext">{{ section.settings.richtext1 }}</h2>
             
@@ -71,9 +71,7 @@
   {% endschema %}
 
 {% stylesheet %}
-.section-flex-img-right img{
-  width: 100%!important;
-}
+
 .text-content{
   display:flex;
   flex-direction:column;

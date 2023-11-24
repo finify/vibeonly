@@ -1,32 +1,33 @@
-
-<div class="container">
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-12 text-content">
-            <h1 class="mobile-app-flexible__title">{{ section.settings.heading1 }}</h1>
-            <p class="mobile-app-flexible__subtext">{{ section.settings.richtext1 }}</p>
-        
-            <a class="mobile-app-section__button" href="{{ section.settings.link1 }}">
-                {{- section.settings.link1text -}}
-            </a>
-        </div>
-        <div class="col-lg-6 col-md-6 col-12 section-flex-img-right mobile-app-section__media">
-          {%- if section.settings.image != blank -%}
-            {{-
-              section.settings.image
-              | image_url: width: 2024
-              | image_tag: loading: 'lazy', widths: '300,400,500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600'
-            -}}
-          {%- else -%}
-            {{- 'image' | placeholder_svg_tag: 'aspect-short placeholder' -}}
-          {%- endif -%}
-        </div>
-    </div>
+<div class="mobile-flex-right">
+  <div class="section   section-blends section-full">
+      <div class="row">
+          <div class="col-lg-6 col-md-6 col-12 text-content">
+              <h1 class="mobile-app-flexible__title">{{ section.settings.heading1 }}</h1>
+              <p class="mobile-app-flexible__subtext">{{ section.settings.richtext1 }}</p>
+          
+              <a class="mobile-app-section__button" href="{{ section.settings.link1 }}">
+                  {{- section.settings.link1text -}}
+              </a>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12 section-flex-img-right mobile-app-section__media">
+            {%- if section.settings.image != blank -%}
+              {{-
+                section.settings.image
+                | image_url: width: 2024
+                | image_tag: loading: 'lazy', widths: '300,400,500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600'
+              -}}
+            {%- else -%}
+              {{- 'image' | placeholder_svg_tag: 'aspect-short placeholder' -}}
+            {%- endif -%}
+          </div>
+      </div>
+  </div>
 </div>
-
 
 {% schema %}
   {
       "name": "mobile-flexible-right",
+      "class":"mobile-flex-right",
       "tag": "section",
       "settings": [
           {
@@ -68,9 +69,7 @@
   {% endschema %}
 
 {% stylesheet %}
-.section-flex-img-right img{
-  width: 80%!important;
-}
+
 .text-content{
   display:flex;
   flex-direction:column;
