@@ -88,10 +88,13 @@
             padding:10px;
             }
             .mobile-tab-item.active {
-                font-size: 2.5vw;
+                font-size: 3.5vw;
             }
             .mobile-tab-item {
-                font-size: 2.5vw;
+                font-size: 3.5vw;
+            }
+            .tab_title{
+                font-size: 30px!important;
             }
         }
         .nav-link{
@@ -101,10 +104,19 @@
             width: 90%;
             margin: auto;
         }
+        .tab_title{
+            color: #403131;
+            font-family: Operetta 12;
+            font-size:70px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding-top: 20px;
+        }
 </style>
 <div class="mobile-tab">
         <div class="section section-blends section-full">
-            <h1 class="mobile-app-flexible__title">{{ section.settings.title }}</h1>
+            <h1 class="tab_title">{{ section.settings.title }}</h1>
             <div class="d-flex align-items-start row">
                 <div class="nav flex-column nav-pills me-3 col-lg-6 col-md-6 col-12" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     {% if section.blocks %}
