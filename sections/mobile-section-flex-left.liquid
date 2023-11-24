@@ -1,7 +1,7 @@
 
-<div class="container" style="max-width:max-content!important">
+<div class="container">
     <div class="row">
-        <div class="col-lg-4 col-md-4 col-12 section-flex-img-right mobile-app-section__media">
+        <div class="col-lg-6 col-md-6 col-12 section-flex-img-right mobile-app-section__media">
           {%- if section.settings.image_left != blank -%}
             {{-
               section.settings.image_left
@@ -12,9 +12,9 @@
             {{- 'image' | placeholder_svg_tag: 'aspect-short placeholder' -}}
           {%- endif -%}
         </div>
-        <div class="col-lg-8 col-md-8 col-12 text-content">
-            <h1 class="mobile-app-flexible__title">{{ section.settings.heading1 }}</h1>
-            <p class="mobile-app-flexible__subtext">{{ section.settings.richtext1 }}</p>
+        <div class="col-lg-6 col-md-6 col-12 text-content">
+            <h1 class="mobile-app-flex-left__title">{{ section.settings.heading1 }}</h1>
+            <h2 class="mobile-app-flexible__subtext">{{ section.settings.richtext1 }}</h2>
         
             <a class="mobile-app-section__button" href="{{ section.settings.link1 }}">
                 {{- section.settings.link1text -}}
@@ -94,16 +94,17 @@
   .container{
     margin-bottom:30px;
   }
-  .mobile-app-flexible__title{
+  .mobile-app-flex-left__title{
     margin-top:30px;
     color: #403131;
     font-family: Operetta 12;
-    font-size: 3.5em;
+    font-size:3.5vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
   .mobile-app-section__button{
+    margin-top:10px!important;
     padding:13px;
     font-size: 13px;
     color: #403131;

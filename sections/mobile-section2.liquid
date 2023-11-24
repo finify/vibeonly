@@ -8,6 +8,16 @@
       grid-template-columns: repeat({{ section.blocks.size }}, 1fr);
   }
 
+  @media only screen and (max-width: 600px) {
+    .mobile-app-section-2__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .mobile-app-section-2__title{
+      font-size: 32px;
+      text-align: left;
+    }
+  }
+
   {%- for block in section.blocks -%}
     .mobile-app-section-2__image {
       background-image:url("{{ block.settings.image | image_url: width: 1000}}")
