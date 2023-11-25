@@ -19,8 +19,8 @@
   }
 
   {%- for block in section.blocks -%}
-    .mobile-app-section-2__image {
-      background-image:url("{{ block.settings.image | image_url: width: 1000}}")
+    #block-{{ block.id }} {
+      background-image:url("{{ block.settings.image | image_url: width: 1000 }}")
     }
   {% endfor %}
 </style>
@@ -38,7 +38,7 @@
               <div class="mobile-app-section-2__image-title">{{ block.settings.image_title }}</div>
             </div>
 
-            <div class="mobile-app-section-2__image">
+            <div class="mobile-app-section-2__image" id="block-{{ block.id }}">
               <p class="mobile-app-section-2__caption">{{ block.settings.image_caption }}</p>
               <div class="mobile-app-section-2__link">
                 <a href="{{ block.settings.link_url }}" target="_blank">
