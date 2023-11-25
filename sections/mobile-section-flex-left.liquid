@@ -13,7 +13,7 @@
             {%- endif -%}
             </div>
             <div class="col-lg-7 col-md-7 col-12 text-content">
-                <h1 class="mobile-app-flex-left__title">{{ section.settings.heading1 }}</h1>
+                <h1 class="mobile-app-flex-left__title" bp="{{ section.settings.breadpoint }}">{{ section.settings.heading1 }}</h1>
                 <h2 class="mobile-app-flexible__subtext">{{ section.settings.richtext1 }}</h2>
             
                 <a class="mobile-app-section__button" href="{{ section.settings.link1 }}">
@@ -37,6 +37,13 @@
               "id": "heading1",
               "label": "Heading 1",
               "default": "Designed for one handed use"
+          },
+          {
+              "type": "number",
+              "id": "breakpoint",
+              "label": "Sentence Breakpoint",
+              "info": "Decide where the world breaks to the new line 2 means from the second word",
+              "default": "0"
           },
           {
             "type": "image_picker",
@@ -126,4 +133,22 @@
 {% endstylesheet %}
 
 {% javascript %}
+    let myTitles= document.querySelectorAll('.mobile-app-flex-left__title');
+
+    myTitles.forEach(myTitle => {
+        let myTitleText = myTitle.innerHTML;
+        let breakpoint = myTitle.getAttribute('bp');
+
+        console.log(breakpoint);
+        let myTitleArray = myTitleText.split(" ");
+
+        myTitleArray.splice(breakpoint, 0, "</br>");
+
+        let modTitle = myTitleArray.slice(0, myTitleArray.length).join(' ') ;
+
+        if(breakpoint != 0 || breakpoing==""){
+            myTitle.innerHTML = modTitle ;
+        }
+
+    });
 {% endjavascript %}
