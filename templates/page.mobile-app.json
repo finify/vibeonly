@@ -88,6 +88,7 @@
       "type": "mobile-section-flex-left",
       "settings": {
         "heading1": "Designed for one handed use",
+        "breakpoint": 2,
         "image_left": "shopify:\/\/shop_images\/section3image.png",
         "richtext1": "<p>The Vibes Only app's custom controller lets you adjust the intensity (0-100%), pick patterns, toggle stealth mode, and control dual motors vibrators independently.<\/p>",
         "link1": "",
@@ -180,6 +181,7 @@
       "type": "mobile-section-flex-left",
       "settings": {
         "heading1": "Erotic audio",
+        "breakpoint": 0,
         "image_left": "shopify:\/\/shop_images\/eroticaudio_533c2c39-b0de-4d58-b91b-1eb70c1cb836.png",
         "richtext1": "<p>Take your pleasure to the next level with a library of erotic audio experiences. With new stories released weekly and sexy voices of all genders (speaking directly to you), subscribing to the VO app unlocks a world in which you’re the main character of your wilde?st fantasies. Opt for an all-encompassing experience: Listen, read in tandem, and turn on automatic mode, which syncs your vibrator with the story. As the action gets hotter, your vibrator will follow along, so you can lay back and let our sultry narratives guide your pleasure effortlessly. <\/p>",
         "link1": "",
@@ -250,6 +252,7 @@
       "type": "mobile-section-flex-left",
       "settings": {
         "heading1": "Lyrics",
+        "breakpoint": 0,
         "image_left": "shopify:\/\/shop_images\/image_104.png",
         "richtext1": "<p>Swipe up to engage and read along with the story, with or without sound. Our lyric feature lets you navigate to any section, ensuring your vibrator stays in sync when in automatic mode too.<\/p>",
         "link1": "",
