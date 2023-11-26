@@ -153,6 +153,25 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
               $('.nav-link').first().addClass('active');
               $('.tab-pane').first().addClass('active');
           });
+
+          let myTitles= document.querySelectorAll('.title-break');
+
+          myTitles.forEach(myTitle => {
+              let myTitleText = myTitle.innerHTML;
+              let breakpoint = myTitle.getAttribute('bp');
+
+              console.log(breakpoint);
+              let myTitleArray = myTitleText.split(" ");
+
+              myTitleArray.splice(breakpoint, 0, "</br>");
+
+              let modTitle = myTitleArray.slice(0, myTitleArray.length).join(' ') ;
+
+              if(breakpoint != 0 || breakpoing==""){
+                  myTitle.innerHTML = modTitle ;
+              }
+
+          });
       </script>
         {% comment %} newasset {% endcomment %}
   </body>

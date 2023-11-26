@@ -2,14 +2,14 @@
   <div class="section   section-blends section-full">
       <div class="row">
           <div class="col-lg-6 col-md-6 col-12 text-content">
-              <h1 class="mobile-app-flexible__title">{{ section.settings.heading1 }}</h1>
-              <p class="mobile-app-flexible__subtext">{{ section.settings.richtext1 }}</p>
+              <h1 class="mobile-app-flex-title title-break" bp="{{ section.settings.breakpoint }}">{{ section.settings.heading1 }}</h1>
+              <h4 class="mobile-app-flex-subtext">{{ section.settings.richtext1 }}</h4>
           
               <a class="mobile-app-section__button" href="{{ section.settings.link1 }}">
                   {{- section.settings.link1text -}}
               </a>
           </div>
-          <div class="col-lg-6 col-md-6 col-12 section-flex-img-right mobile-app-section__media">
+          <div class="col-lg-6 col-md-6 col-12 mobile-flex-right-img mobile-app-section__media">
             {%- if section.settings.image != blank -%}
               {{-
                 section.settings.image
@@ -35,6 +35,12 @@
               "id": "heading1",
               "label": "Heading 1",
               "default": "Designed for one handed use"
+          },
+          {
+              "type": "number",
+              "id": "breakpoint",
+              "label": "Sentence Breakpoint for Heading",
+              "default": 0
           },
           {
             "type": "image_picker",
@@ -77,14 +83,11 @@
     align-content: space-around;
     justify-content: center;
 }
-  .mobile-app-flexible__subtext{
-    color: #403131;
-    font-family: Helvetica Neue;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 300;
+
+  .mobile-flex-right-img img{
+    width: 367px;
+    margin: auto;
   }
-  
   
   .flexible_image{
     width:200%!important;
@@ -102,17 +105,7 @@
     font-weight: 700;
     line-height: normal;
   }
-  .mobile-app-section__button{
-    padding:13px;
-    font-size: 13px;
-    color: #403131;
-    width: fit-content;
-    font-weight:400;
-    font-family: Helvetica Neue;
-    border-radius: 12px;
-    border: 1px solid rgba(191, 85, 105, 0.30);
-    background: linear-gradient(90deg, rgba(229, 102, 126, 0.60) -42.84%, rgba(248, 228, 230, 0.60) 114.03%);
-  }
+  
 {% endstylesheet %}
 
 {% javascript %}

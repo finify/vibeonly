@@ -13,8 +13,8 @@
             {%- endif -%}
             </div>
             <div class="col-lg-6 col-md-6 col-12 text-content">
-                <h1 class="mobile-app-flex-left__title" bp="{{ section.settings.breakpoint }}">{{ section.settings.heading1 }}</h1>
-                <h2 class="mobile-app-flexible__subtext">{{ section.settings.richtext1 }}</h2>
+                <h1 class="mobile-app-flex-title title-break" bp="{{ section.settings.breakpoint }}">{{ section.settings.heading1 }}</h1>
+                <h4 class="mobile-app-flex-subtext">{{ section.settings.richtext1 }}</h4>
             
                 <a class="mobile-app-section__button" href="{{ section.settings.link1 }}">
                     {{- section.settings.link1text -}}
@@ -41,7 +41,7 @@
           {
               "type": "number",
               "id": "breakpoint",
-              "label": "Sentence Breakpoint",
+              "label": "Sentence Breakpoint for heading",
               "default": 0
           },
           {
@@ -88,12 +88,14 @@
     align-content: space-around;
     justify-content: center;
 }
-  .mobile-app-flexible__subtext{
+  .mobile-app-flexible__subtext p{
     color: #403131;
     font-family: Helvetica Neue;
-    font-size: 15px;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 348;
+    line-height: normal;
+    width:80%;
   }
   
   
@@ -114,43 +116,19 @@
     font-weight: 700;
     line-height: normal;
   }
-  .mobile-app-section__button{
-    margin-top:10px!important;
-    padding:13px;
-    font-size: 13px;
-    color: #403131;
-    width: fit-content;
-    font-weight:400;
-    font-family: Helvetica Neue;
-    border-radius: 12px;
-    border: 1px solid rgba(191, 85, 105, 0.30);
-    background: linear-gradient(90deg, rgba(229, 102, 126, 0.60) -42.84%, rgba(248, 228, 230, 0.60) 114.03%);
-  }
+  
 
   @media only screen and (max-width: 600px) {
     .mobile-app-flex-left__title{
         font-size:40px;
     }
+    .mobile-app-flexible__subtext p{
+        width:100%;
+        font-size:15px;
+    }
   }
 {% endstylesheet %}
 
 {% javascript %}
-    let myTitles= document.querySelectorAll('.mobile-app-flex-left__title');
-
-    myTitles.forEach(myTitle => {
-        let myTitleText = myTitle.innerHTML;
-        let breakpoint = myTitle.getAttribute('bp');
-
-        console.log(breakpoint);
-        let myTitleArray = myTitleText.split(" ");
-
-        myTitleArray.splice(breakpoint, 0, "</br>");
-
-        let modTitle = myTitleArray.slice(0, myTitleArray.length).join(' ') ;
-
-        if(breakpoint != 0 || breakpoing==""){
-            myTitle.innerHTML = modTitle ;
-        }
-
-    });
+    
 {% endjavascript %}

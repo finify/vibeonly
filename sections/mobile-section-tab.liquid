@@ -8,7 +8,7 @@
             list-style-type: none;
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            gap: 10px;
             padding-left: 0px;
         }
 
@@ -16,16 +16,20 @@
             border-radius: 110px;
             border: 1px solid #403131;
             background: #F9E8EA!important;
-            padding: 5px 10px 5px 10px;
+            padding: 3px 10px 5px 10px;
             align-items: center;
             width: fit-content;
             display: flex;
             align-items: center;
             gap: 5px;
-            color:black!important;
+            color:#403131!important;
+            font-family: Helvetica Neue;
             font-size: 2vw;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
         }
-
+        
         .mobile-tab-item {
             padding: 5px 10px 5px 10px;
             align-items: center;
@@ -33,7 +37,8 @@
             display: flex;
             align-items: center;
             gap: 5px;
-            color:black!important;
+            color:#403131!important;
+            font-weight: 300;
             font-size: 2vw;
         }
 
@@ -42,10 +47,11 @@
             border-radius: 110px;
             border: 1px solid #403131;
             background: #F9E8EA;
+            padding: 3px 10px 5px 10px;
         }
 
         .mobile-tab-item img {
-            width: 15px;
+            width: 25px;
         }
 
         .section-flex-img {
@@ -76,6 +82,7 @@
         }
         .nav{
             width: 45%;
+            gap:10px;
         }
         @media only screen and (max-width: 600px) {
             .nav{
@@ -87,13 +94,21 @@
             margin: auto;
             }
             .mobile-tab-item.active {
-                font-size: 3.5vw;
+                font-size: 4.7vw;
+                padding: 4px 6px;
             }
             .mobile-tab-item {
-                font-size: 3.5vw;
+                font-size: 4.7vw;
             }
             .tab_title{
                 font-size: 30px!important;
+            }
+            .mobile-tab-item img {
+            width: 16px;
+            }
+            .mobile-tab-item:hover {
+                padding:5px;
+                padding: 4px 6px;
             }
         }
         .nav-link{
@@ -115,7 +130,7 @@
 </style>
 <div class="mobile-tab">
         <div class="section section-blends section-full">
-            <h1 class="tab_title">{{ section.settings.title }}</h1>
+            <h1 class="mobile-app-flex-title title-break" bp="{{ section.settings.breakpoint }}">{{ section.settings.title }}</h1>
             <div class="d-flex align-items-start row">
                 <div class="nav flex-column nav-pills me-3 col-lg-6 col-md-6 col-12" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     {% if section.blocks %}
@@ -127,8 +142,8 @@
                         {%- if block.settings.tabicon != blank -%}
                             {{-
                             block.settings.tabicon
-                            | image_url: width: 15
-                            | image_tag: loading: 'lazy', widths: '15'
+                            | image_url: width: 25
+                            | image_tag: loading: 'lazy', widths: '17,25'
                             -}}
                         {%- else -%}
                             {{- 'image' | placeholder_svg_tag: 'aspect-short placeholder' -}}
@@ -145,7 +160,7 @@
                                     {{-
                                     block.settings.tabimage
                                     | image_url: width: 2024
-                                    | image_tag: loading: 'lazy', widths: '300,400,500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600'
+                                    | image_tag: loading: 'eager', widths: '300,400,500'
                                     -}}
                                 {%- else -%}
                                     {{- 'image' | placeholder_svg_tag: 'aspect-short placeholder' -}}
@@ -177,6 +192,12 @@
       "id": "title",
       "label": "Heading",
       "default": "Heading"
+    },
+    {
+        "type": "number",
+        "id": "breakpoint",
+        "label": "Sentence Breakpoint",
+        "default": 0
     }
   ],
   "blocks": [

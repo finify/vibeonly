@@ -52,6 +52,9 @@
         .mobile-app-slide-subtext{
             font-size:15px;
         }
+        .mobile-slide{
+            width: 100%!important;
+        }
     }
 
     .mobile-app-slide-subtext{
@@ -64,9 +67,8 @@
     }
     .card-body{
         min-height: 300px;
-        min-width: 700px;
-        margin-right: 20px;
-        border-radius: 15px;
+        min-width: 800px;
+        border-radius: 32px;
         border: 1px solid rgba(191, 85, 105, 0.30);
         background: linear-gradient(180deg, #F2C2C7 0%, rgba(249, 232, 234, 0.15) 100%), #FDF3F3;
         box-shadow: 0px 20px 32px 0px rgba(191, 85, 105, 0.12);
@@ -81,13 +83,19 @@
         justify-content: center;
     }
     .mobile-slide{
-        width: 100%;
+        width: 105%;
         height: fit-content;
-        overflow: hidden;
+        overflow:hidden;
         overflow: scroll;
+    }
+    .flex-row{
+        gap:25px!important;
     }
     .mobile-slide::-webkit-scrollbar {
     display: none;
+    }
+    .mobile-slide-section{
+        width: 100%;
     }
 </style>
 <div class="mobile-slide-section">
