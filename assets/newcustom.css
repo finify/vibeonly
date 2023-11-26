@@ -51,4 +51,8 @@ background: linear-gradient(90deg, rgba(229, 102, 126, 0.60) -42.84%, rgba(248, 
         width:100%;
         font-size:15px;
     }
+
+    .row-reverse{
+        flex-direction: column-reverse;
+    }
   }

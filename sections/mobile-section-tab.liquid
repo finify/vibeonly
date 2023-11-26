@@ -84,6 +84,10 @@
             width: 45%;
             gap:10px;
         }
+
+        .tab-image{
+            margin-top: -50px;
+        }
         @media only screen and (max-width: 600px) {
             .nav{
             flex-direction: row!important;
@@ -110,6 +114,9 @@
                 padding:5px;
                 padding: 4px 6px;
             }
+            .tab-image{
+            margin-top: 0px!important;
+            }
         }
         .nav-link{
             text-align: left;
@@ -130,8 +137,8 @@
 </style>
 <div class="mobile-tab">
         <div class="section section-blends section-full">
-            <h1 class="mobile-app-flex-title title-break" bp="{{ section.settings.breakpoint }}">{{ section.settings.title }}</h1>
-            <div class="d-flex align-items-start row">
+            <h1 class="mobile-app-flex-title title-break pb-4" bp="{{ section.settings.breakpoint }}">{{ section.settings.title }}</h1>
+            <div class="d-flex align-items-start row row-reverse">
                 <div class="nav flex-column nav-pills me-3 col-lg-6 col-md-6 col-12" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     {% if section.blocks %}
                         {%- for block in section.blocks -%}
@@ -160,7 +167,7 @@
                                     {{-
                                     block.settings.tabimage
                                     | image_url: width: 2024
-                                    | image_tag: loading: 'eager', widths: '300,400,500'
+                                    | image_tag: loading: 'eager', widths: '300,400,500', class: 'tab-image'
                                     -}}
                                 {%- else -%}
                                     {{- 'image' | placeholder_svg_tag: 'aspect-short placeholder' -}}
