@@ -101,23 +101,15 @@
         "template--16968722809069__0a023bbd-a3e0-46ca-9fe3-941a93e245ce-image-1": {
           "type": "image",
           "settings": {
-            "tabimage": "shopify:\/\/shop_images\/customcontroller.png",
+            "tabimage": "shopify:\/\/shop_images\/customeupload.png",
             "tabicon": "shopify:\/\/shop_images\/Group.png",
             "icontext": "Custom controller"
-          }
-        },
-        "02317d53-b179-4f9d-ad42-1b82a13dc3e7": {
-          "type": "image",
-          "settings": {
-            "tabimage": "shopify:\/\/shop_images\/eroticaudio.png",
-            "tabicon": "shopify:\/\/shop_images\/erotic.png",
-            "icontext": "Erotic experience"
           }
         },
         "efa73c0c-f6e1-472c-b5e8-8c2571b1a60e": {
           "type": "image",
           "settings": {
-            "tabimage": "shopify:\/\/shop_images\/manualmode.png",
+            "tabimage": "shopify:\/\/shop_images\/manualupload.png",
             "tabicon": "shopify:\/\/shop_images\/battery.png",
             "icontext": "Manual mode"
           }
@@ -125,15 +117,23 @@
         "f396b7f9-4323-42de-a8d3-82762d8416ec": {
           "type": "image",
           "settings": {
-            "tabimage": "shopify:\/\/shop_images\/automaticmode.png",
+            "tabimage": "shopify:\/\/shop_images\/automaticupload.png",
             "tabicon": "shopify:\/\/shop_images\/automatic.png",
             "icontext": "Automatic mode"
+          }
+        },
+        "02317d53-b179-4f9d-ad42-1b82a13dc3e7": {
+          "type": "image",
+          "settings": {
+            "tabimage": "shopify:\/\/shop_images\/eroticupload.png",
+            "tabicon": "shopify:\/\/shop_images\/erotic.png",
+            "icontext": "Erotic experience"
           }
         },
         "20fd525b-ce4c-47ee-bfa7-7f1bfba00f15": {
           "type": "image",
           "settings": {
-            "tabimage": "shopify:\/\/shop_images\/categories.png",
+            "tabimage": "shopify:\/\/shop_images\/categoriesupload.png",
             "tabicon": "shopify:\/\/shop_images\/category.png",
             "icontext": "Categories"
           }
@@ -141,7 +141,7 @@
         "73dfb5f0-de2a-4f8f-be97-2e4689b53a3b": {
           "type": "image",
           "settings": {
-            "tabimage": "shopify:\/\/shop_images\/videoinformation.png",
+            "tabimage": "shopify:\/\/shop_images\/informativeupload.png",
             "tabicon": "shopify:\/\/shop_images\/video.png",
             "icontext": "Informative videos"
           }
@@ -149,7 +149,7 @@
         "15031b13-655a-4d20-96de-b842d348c641": {
           "type": "image",
           "settings": {
-            "tabimage": "shopify:\/\/shop_images\/longdistance.png",
+            "tabimage": "shopify:\/\/shop_images\/longupload.png",
             "tabicon": "shopify:\/\/shop_images\/long.png",
             "icontext": "Long Distance Lover"
           }
@@ -165,16 +165,17 @@
       },
       "block_order": [
         "template--16968722809069__0a023bbd-a3e0-46ca-9fe3-941a93e245ce-image-1",
-        "02317d53-b179-4f9d-ad42-1b82a13dc3e7",
         "efa73c0c-f6e1-472c-b5e8-8c2571b1a60e",
         "f396b7f9-4323-42de-a8d3-82762d8416ec",
+        "02317d53-b179-4f9d-ad42-1b82a13dc3e7",
         "20fd525b-ce4c-47ee-bfa7-7f1bfba00f15",
         "73dfb5f0-de2a-4f8f-be97-2e4689b53a3b",
         "15031b13-655a-4d20-96de-b842d348c641",
         "90a76d68-f6d3-45fb-bca0-af59f68db89c"
       ],
       "settings": {
-        "title": "Explore the Vibes Only"
+        "title": "Explore the Vibes Only",
+        "breakpoint": 0
       }
     },
     "e507c9af-064a-4b35-b51b-bb8939a4655d": {
@@ -192,6 +193,7 @@
       "type": "mobile-section-flex-right",
       "settings": {
         "heading1": "Informative video",
+        "breakpoint": 0,
         "image": "shopify:\/\/shop_images\/informative.png",
         "richtext1": "<p>Learn from the pros with videos offering expert tips and advice designed to energize your sex life and elevate your self-love.Subscribing to the VO app grants you access to a continuous stream of informative content, ensuring you’ll discover new heights of enjoyment, plus new ways to use your vibrator solo or with a partner.<\/p>",
         "link1": "",
@@ -263,6 +265,7 @@
       "type": "mobile-section-flex-right",
       "settings": {
         "heading1": "Battery estimator",
+        "breakpoint": 0,
         "image": "shopify:\/\/shop_images\/image_104.png",
         "richtext1": "<p>You can check the battery life of your Vibes Only vibrator within the app. Once your vibrator is connected via Bluetooth, you will see the battery life on the battery icon.<\/p>",
         "link1": "",
